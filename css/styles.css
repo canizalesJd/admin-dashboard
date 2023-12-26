@@ -193,7 +193,7 @@ a {
 
 .dashboard-content {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 3fr 1fr;
 }
 
 .cards-containers {
@@ -203,17 +203,29 @@ a {
 }
 
 .announcements {
+	display: flex;
+	flex-direction: column;
 	padding: 0 2em;
+	grid-row: 1 / 2;
 }
 
 .trending {
+	display: flex;
+	flex-direction: column;
 	padding: 0 2em;
+	grid-row: 2 / 3;
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.margin-x-10 {
+	margin: 0px 10px;
 }
 
 .margin-y-10 {
@@ -232,4 +244,24 @@ a {
 .card-text {
 	color: var(--text-200);
 	font-weight: 400;
+}
+
+.card-buttons {
+	align-self: flex-end;
+}
+
+.trend {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0px;
+}
+
+.trend-title {
+	font-weight: 700;
+}
+
+.trend-image {
+	max-height: 50px;
+	border-radius: 100%;
 }
