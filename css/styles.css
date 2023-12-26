@@ -37,7 +37,7 @@ main {
 	font-weight: 400;
 	color: var(--bg-100);
 	font-size: 1rem;
-	min-height: 100vh;
+	max-height: 100vh;
 }
 
 .logo-container {
@@ -69,6 +69,7 @@ a {
 }
 
 .top-menu {
+	background: var(--bg-100);
 	display: flex;
 	flex-direction: column;
 	padding: 2em 0;
@@ -179,4 +180,56 @@ a {
 
 .material-symbols-outlined {
 	cursor: pointer;
+}
+
+.projects {
+	padding: 0 2em;
+	grid-row: 1 / 3;
+}
+
+.dashboard {
+	max-height: 100vh;
+}
+
+.dashboard-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.cards-containers {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.announcements {
+	padding: 0 2em;
+}
+
+.trending {
+	padding: 0 2em;
+}
+
+.card {
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.margin-y-10 {
+	margin: 10px 0px;
+}
+
+.project {
+	border-left: 10px solid var(--primary-200);
+}
+
+.card-title {
+	font-weight: 700;
+	color: var(--text-200);
+}
+
+.card-text {
+	color: var(--text-200);
+	font-weight: 400;
 }
