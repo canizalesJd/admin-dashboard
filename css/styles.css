@@ -71,10 +71,16 @@ a {
 .top-menu {
 	display: flex;
 	flex-direction: column;
+	padding: 2em 0;
 }
 
 .top-container {
-	padding: 2em;
+	padding: 0 2em;
+	display: flex;
+}
+
+.bottom-container {
+	padding: 0 2em;
 	display: flex;
 }
 
@@ -120,8 +126,55 @@ a {
 	margin: 0px 10px;
 }
 
+.user-welcome {
+	display: flex;
+	align-items: center;
+	flex: 7;
+}
+
+.action-buttons {
+	flex: 5;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.button {
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-family: inherit;
+	font-weight: 700;
+}
+
+.action-btn {
+	background-color: var(--primary-200);
+	color: var(--bg-100);
+	padding: 14px 40px;
+	margin: 0px 10px;
+	border-radius: 20px;
+	max-height: 45px;
+}
+
+.action-btn:hover {
+	transition: 200ms;
+	background-color: var(--primary-100);
+}
+
 .text-small {
-	font-size: 0.98rem;
+	font-size: 0.98em;
+}
+
+.text-medium {
+	font-size: 1.3em;
+}
+
+.text-large {
+	font-size: 1.4em;
+}
+
+.bold {
+	font-weight: 700;
 }
 
 .material-symbols-outlined {
